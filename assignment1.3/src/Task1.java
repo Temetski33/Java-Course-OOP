@@ -16,19 +16,19 @@ public class Task1 {
 
         double discriminant = (b * b - 4 * a * c);
 
-        System.out.println("diskrimont on " + (discriminant));
+        System.out.println("Discriminant " + (discriminant));
 
         if (discriminant > 0) {
-            double pospos = ((-b + Math.sqrt(discriminant)) / (2 * a));
-            double negneg = ((-b - Math.sqrt(discriminant)) / (2 * a));
+            double posroot = ((-b + Math.sqrt(discriminant)) / (2 * a));
+            double negroot = ((-b - Math.sqrt(discriminant)) / (2 * a));
             System.out.println("The equation has two roots.");
-            System.out.println("The first root is " + pospos);
-            System.out.println("The second root is " + negneg);
+            System.out.println("The first root is " + posroot);
+            System.out.println("The second root is " + negroot);
         }
         else if (discriminant == 0) {
-            double setit = (-b / (2 * a));
+            double oneroot = (-b / (2 * a));
             System.out.println("The equation has one real root.");
-            System.out.println("The root is " + setit);
+            System.out.println("The root is " + oneroot);
         }
         else {
             System.out.println("The equation has no real roots.");
