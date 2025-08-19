@@ -14,9 +14,20 @@ public class Task1 {
         System.out.println("Give c:");
         double c = Integer.parseInt(scanner.nextLine());
 
-        double d = (-4 * a * c);
+        double d = (b * b - 4 * a * c);
 
         System.out.println("diskrimont on " + (d));
+
+        if (d > 0) {
+            System.out.println("yks pos");
+            System.out.println("kaks pos");
+        }
+        else if (d < 0) {
+            System.out.println("nuh uh");
+        }
+        else {
+            System.out.println("yeah");
+        }
 
 
     }
