@@ -14,19 +14,22 @@ public class Task1 {
         System.out.println("Give c:");
         double c = Integer.parseInt(scanner.nextLine());
 
-        double d = (b * b - 4 * a * c);
+        double discriminant = (b * b - 4 * a * c);
 
-        System.out.println("diskrimont on " + (d));
+        System.out.println("diskrimont on " + (discriminant));
 
-        if (d > 0) {
-            System.out.println("yks pos");
-            System.out.println("kaks pos");
+        if (discriminant > 0) {
+            System.out.println("The equation has two roots.");
+            System.out.println("The first root is");
+            System.out.println("The second root is");
         }
-        else if (d < 0) {
-            System.out.println("nuh uh");
+        else if (discriminant == 0) {
+            double setit = (-b / (2 * a));
+            System.out.println("The equation has one real root.");
+            System.out.println("The root is " + setit);
         }
         else {
-            System.out.println("yeah");
+            System.out.println("The equation has no real roots.");
         }
 
 
