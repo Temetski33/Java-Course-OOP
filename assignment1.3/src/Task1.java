@@ -16,8 +16,6 @@ public class Task1 {
 
         double discriminant = (b * b - 4 * a * c);
 
-        System.out.println("Discriminant " + (discriminant));
-
         if (discriminant > 0) {
             double posroot = ((-b + Math.sqrt(discriminant)) / (2 * a));
             double negroot = ((-b - Math.sqrt(discriminant)) / (2 * a));
