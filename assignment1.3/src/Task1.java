@@ -14,7 +14,10 @@ public class Task1 {
         System.out.println("Give c:");
         double c = Integer.parseInt(scanner.nextLine());
 
-        System.out.println("The sum of the numbers is " + (a + b + c));
-        System.out.println("The product of the numbers is " + (a * b * c));
+        double d = (-4 * a * c);
+
+        System.out.println("diskrimont on " + (d));
+
+
     }
 }
