@@ -19,9 +19,11 @@ public class Task1 {
         System.out.println("diskrimont on " + (discriminant));
 
         if (discriminant > 0) {
+            double pospos = ((-b + Math.sqrt(discriminant)) / (2 * a));
+            double negneg = ((-b - Math.sqrt(discriminant)) / (2 * a));
             System.out.println("The equation has two roots.");
-            System.out.println("The first root is");
-            System.out.println("The second root is");
+            System.out.println("The first root is " + pospos);
+            System.out.println("The second root is " + negneg);
         }
         else if (discriminant == 0) {
             double setit = (-b / (2 * a));
