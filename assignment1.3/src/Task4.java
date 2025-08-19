@@ -4,12 +4,15 @@ public class Task4 {
 
     public static void main(String[] args) {
         int score = 0;
-        // generateNumber();
-        askMultiplication();
+        do {
+            score = score + startGame();
+
+        } while (score != 1);
+
 
     }
 
-    static void askMultiplication() {
+    static int askMultiplication() {
         int first = generateNumber();
         int second = generateNumber();
         int product = first * second;
@@ -17,18 +20,39 @@ public class Task4 {
 
         Scanner reader = new Scanner(System.in);
         int answer = Integer.parseInt(reader.nextLine());
-        System.out.println(answer);
 
         if (answer == product) {
             System.out.println("Your answer is correct!");
+            return 1;
         }
-        System.out.println("The answer is " + product + ".");
+        else {
+            System.out.println("Not quite!");
+            System.out.println("The correct answer is " + product + ".");
+            return 0;
+        }
+
+    }
+
+    static int startGame() {
+        System.out.println("Welcome to game!!!!!!");
+
+        int surpa = 0;
+        for (int i = 1; i <= 10; i++) {
+            surpa = surpa + askMultiplication();
+        }
+        if (surpa == 10) {
+            System.out.println("hurrau");
+            return 1;
+        }
+        else {
+            System.out.println("nt yri");
+            return 0;
+
+        }
     }
 
     static int generateNumber() {
-        int number = (int) (Math.random() * 10) + 1;
-        System.out.println("Luku: " + number);
-        return number;
+        return (int) (Math.random() * 10) + 1;
     }
 }
 
