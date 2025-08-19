@@ -39,6 +39,7 @@ public class Task4 {
         int surpa = 0;
         for (int i = 1; i <= 10; i++) {
             surpa = surpa + askMultiplication();
+            System.out.println(surpa + " out of " + i + " answers correct so far.");
         }
         if (surpa == 10) {
             System.out.println("hurrau");
