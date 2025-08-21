@@ -1,12 +1,13 @@
 public class Television {
+
+    int currentChannel = 0;
+
     int setChannel(int channel) {
-        System.out.println("haha");
         return channel;
     }
 
     int getChannel() {
-        System.out.println("haha");
-        return 0;
+        return currentChannel;
     }
 
     void pressOnOff() {
