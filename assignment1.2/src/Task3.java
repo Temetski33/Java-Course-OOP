@@ -6,8 +6,10 @@ public class Task3 {
         Scanner reader = new Scanner(System.in);
         double grams = Double.parseDouble(reader.nextLine());
 
-        double luoti = grams / 13.8;
+        double luoti = grams / 13.28;
+        double naula = luoti / 32;
+        double leiviska = naula / 20;
 
-        System.out.println(luoti);
+        System.out.printf(grams + " grams is " + leiviska + " leiviska, " + naula + " naula, and " + luoti + " luoti.");
     }
 }
