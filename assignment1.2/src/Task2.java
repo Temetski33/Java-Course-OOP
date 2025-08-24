@@ -13,6 +13,6 @@ public class Task2 {
 
         double hypotenuse = Math.sqrt(a*a + b*b);
 
-        System.out.printf("The length of the hypotenuse is " + hypotenuse + "lol");
+        System.out.printf("The length of the hypotenuse is " + "%.1f", hypotenuse);
     }
 }
