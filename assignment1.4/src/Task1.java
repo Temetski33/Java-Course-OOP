@@ -27,7 +27,7 @@ public class Task1 {
     }
 
     static int generateNumber() {
-        return (int) (Math.random() * 6) + 1;
+        return (int) (Math.random() * 5) + 1;
     }
 
 
