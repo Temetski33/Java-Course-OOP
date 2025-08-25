@@ -5,8 +5,8 @@ public class Task1 {
         int yks = generateNumber();
         int kaks = generateNumber();
 
-        String[] firstNames = {"Volvo", "Bermard", "Hekuli", "Fabalaba", "Mordo", "Kemppu"};
-        String[] lastNames = {"Hulivatti", "Hilipatti", "Hollimolli", "Tulikatti", "Virtanen", "Mordoliini"};
+        String[] firstNames = {"Volvo", "Bermard", "Hekuli", "Fabalaba", "Mordo", "Kemppu", "Ring-Ring", "Mimyyli"};
+        String[] lastNames = {"Hulivatti", "Hilipatti", "Hollimolli", "Tulikatti", "Virtanen", "Mordoliini", "Pulikeikari", "Kelipuikari"};
 
         System.out.println(yks);
         System.out.println(kaks);
@@ -27,7 +27,7 @@ public class Task1 {
     }
 
     static int generateNumber() {
-        return (int) (Math.random() * 5) + 1;
+        return (int) (Math.random() * 7) + 1;
     }
 
 
