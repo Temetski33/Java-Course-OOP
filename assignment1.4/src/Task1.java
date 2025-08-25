@@ -11,18 +11,23 @@ public class Task1 {
         System.out.println(yks);
         System.out.println(kaks);
 
+        /*
+
         for (String name : firstNames) {
             System.out.println(name);
         }
 
         for (String name : lastNames) {
             System.out.println(name);
-        }
+        } */
+
+        String nimi = firstNames[yks] + " " + lastNames[kaks];
+        System.out.println(nimi);
 
     }
 
     static int generateNumber() {
-        return (int) (Math.random() * 10) + 1;
+        return (int) (Math.random() * 6) + 1;
     }
 
 
