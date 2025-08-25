@@ -1,6 +1,6 @@
 public class Task1 {
     public static void main(String[] args) {
-        System.out.println("Goood morning !?");
+        System.out.println("Goood morning !!");
 
         int yks = generateNumber();
         int kaks = generateNumber();
