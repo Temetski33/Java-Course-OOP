@@ -18,16 +18,15 @@ public class Task2 {
         String maxRange = "";
         int maxSum = 0;
 
+        // This triple for-loop is not pretty but it works
         for (int x = 1; x <= size; x++) {
             for (int y = x; y <= size; y++) {
                 String currentRange = x + "-" + y;
-                // System.out.println(currentRange);
                 int currentSum = 0;
 
                 for (int z = x; z <= y; z++) {
                     currentSum = currentSum + numbers[z-1];
                 }
-                // System.out.println(currentSum);
                 if (currentSum > maxSum) {
                     maxSum = currentSum;
                     maxRange = currentRange;
