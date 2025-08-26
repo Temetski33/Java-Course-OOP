@@ -1,14 +1,23 @@
+import java.util.Scanner;
+
 public class Task3 {
     public static void main(String[] args) {
-        System.out.println("hello to all the world");
+        System.out.println("Enter start of range: ");
+        Scanner reader = new Scanner(System.in);
+        int start = Integer.parseInt(reader.nextLine());
 
-        int start = 270;
-        int end = 500;
+        System.out.println("Enter end of range: ");
+        int end = Integer.parseInt(reader.nextLine());
 
         if (start > end) {
             System.out.println("Start cannot be larger than end.");
             return;
+        } else if (end < 0 || start < 0) {
+            System.out.println("Start and end must be positive.");
+            return;
         }
+
+        System.out.println("Here are the prime numbers in the range:");
 
         for (int i = start; i <= end; i++) {
             if (checkPrime(i)) {
