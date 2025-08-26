@@ -10,11 +10,19 @@ public class Task2 {
 
         System.out.println("Enter the integers into the array: ");
 
-        for (int i = 0; i <= size - 1; i++){
+        for (int i = 0; i < size; i++){
             System.out.println("Enter integer " + (i+1) + ": ");
             numbers[i] = scanner.nextInt();
         }
 
+        for (int i = 1; i <= size; i++) {
+            for (int j = i; j <= size + 1 - i; j++) {
+                System.out.println("i " + i + " j " + j);
+            }
+        }
+
+
+        System.out.println("array:");
         for (int i = 0; i < size; i++) {
             System.out.println(numbers[i]);
         }
