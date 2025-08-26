@@ -1,7 +1,11 @@
+import java.util.Scanner;
+
 public class Task2 {
     public static void main(String[] args) {
-        String input = "10110";
-        System.out.println(input);
+        System.out.println("Enter a binary number: ");
+        Scanner reader = new Scanner(System.in);
+        String input = reader.nextLine();
+
         String reverse = new StringBuilder(input).reverse().toString();
 
         int iterations = input.length();
