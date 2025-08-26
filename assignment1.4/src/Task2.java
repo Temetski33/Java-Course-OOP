@@ -19,6 +19,12 @@ public class Task2 {
             for (int y = x; y <= size; y++) {
                 String maxRange = "M" + x + y;
                 System.out.println(maxRange);
+                int maxSum = 0;
+
+                for (int z = x; z <= y; z++) {
+                    maxSum = maxSum + numbers[z-1];
+                }
+                System.out.println(maxSum);
             }
         }
 
