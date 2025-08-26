@@ -10,13 +10,17 @@ public class Task3 {
 
         System.out.println("Enter the integers into the array: ");
 
-        for (int i = 0; i <= size - 1; i++){
+        for (int i = 0; i < size; i++){
             System.out.println("Enter integer " + (i+1) + ": ");
             numbers[i] = scanner.nextInt();
         }
 
+        int[] newNumbers = new int[size];
+
+
+        System.out.println("The array without duplicates: ");
         for (int i = 0; i < size; i++) {
-            System.out.println(numbers[i]);
+            System.out.print(numbers[i] + " ");
         }
 
 
