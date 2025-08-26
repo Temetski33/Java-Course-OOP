@@ -15,9 +15,10 @@ public class Task2 {
             numbers[i] = scanner.nextInt();
         }
 
-        for (int i = 1; i <= size; i++) {
-            for (int j = i; j <= size + 1 - i; j++) {
-                System.out.println("i" + i + "j" + j);
+        for (int x = 1; x <= size; x++) {
+            for (int y = x; y <= size; y++) {
+                String maxRange = "M" + x + y;
+                System.out.println(maxRange);
             }
         }
 
