@@ -17,7 +17,7 @@ public class Task2 {
 
         for (int i = 1; i <= size; i++) {
             for (int j = i; j <= size + 1 - i; j++) {
-                System.out.println("i " + i + " j " + j);
+                System.out.println("i" + i + "j" + j);
             }
         }
 
