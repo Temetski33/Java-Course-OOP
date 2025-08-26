@@ -34,17 +34,18 @@ public class Task4 {
     }
 
     static int startGame() {
+        System.out.println();
         System.out.println("Welcome to multiplication table exam!");
         System.out.println("You must answer ten questions correctly to pass.");
         System.out.println();
 
-        int surpa = 0;
+        int correctAnswers = 0;
         for (int i = 1; i <= 10; i++) {
-            surpa = surpa + askMultiplication();
-            System.out.println(surpa + "/" + i + " correct.");
+            correctAnswers = correctAnswers + askMultiplication();
+            System.out.println(correctAnswers + "/" + i + " correct.");
             System.out.println();
         }
-        if (surpa == 10) {
+        if (correctAnswers == 10) {
             System.out.println("Congratulations on mastering the multiplication table!");
             return 1;
         }
