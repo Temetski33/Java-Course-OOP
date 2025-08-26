@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task3 {
@@ -15,12 +16,20 @@ public class Task3 {
             numbers[i] = scanner.nextInt();
         }
 
-        int[] newNumbers = new int[size];
+        Integer[] newNumbers = new Integer[size];
+        int counter = 0;
 
+        for (int element : numbers) {
+            if (!Arrays.asList(newNumbers).contains(element)) {
+                newNumbers[counter] = element;
+                counter++;
+            }
+        }
 
+        System.out.println();
         System.out.println("The array without duplicates: ");
-        for (int i = 0; i < size; i++) {
-            System.out.print(numbers[i] + " ");
+        for (int i = 0; i < counter; i++) {
+            System.out.print(newNumbers[i] + " ");
         }
 
 
