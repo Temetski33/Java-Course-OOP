@@ -29,7 +29,7 @@ public class Task1 {
             System.out.println("The root is " + oneroot);
         }
         else {
-            System.out.println("The equation has no real roots.");
+            System.out.println("No real roots.");
         }
 
 
