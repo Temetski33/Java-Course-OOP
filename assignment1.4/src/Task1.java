@@ -1,34 +1,29 @@
+import java.util.Scanner;
+
 public class Task1 {
     public static void main(String[] args) {
-        System.out.println("Goood morning !!");
+        System.out.println("Enter the amount of names to generate: ");
 
-        int yks = generateNumber();
-        int kaks = generateNumber();
+        Scanner reader = new Scanner(System.in);
+        int amount = Integer.parseInt(reader.nextLine());
 
         String[] firstNames = {"Volvo", "Bermard", "Hekuli", "Fabalaba", "Mordo", "Kemppu", "Ring-Ring", "Mimyyli"};
         String[] lastNames = {"Hulivatti", "Hilipatti", "Hollimolli", "Tulikatti", "Virtanen", "Mordoliini", "Pulikeikari", "Kelipuikari"};
 
-        System.out.println(yks);
-        System.out.println(kaks);
+        System.out.println();
+        System.out.println("Here are your randomly generated names:");
 
-        /*
-
-        for (String name : firstNames) {
+        for (int i = 1; i <= amount; i++) {
+            String name = firstNames[generateNumber()] + " " + lastNames[generateNumber()];
             System.out.println(name);
         }
-
-        for (String name : lastNames) {
-            System.out.println(name);
-        } */
-
-        String nimi = firstNames[yks] + " " + lastNames[kaks];
-        System.out.println(nimi);
 
     }
 
     static int generateNumber() {
         return (int) (Math.random() * 7) + 1;
     }
+
 
 
 
