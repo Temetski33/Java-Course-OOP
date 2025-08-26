@@ -15,24 +15,29 @@ public class Task2 {
             numbers[i] = scanner.nextInt();
         }
 
+        String maxRange = "";
+        int maxSum = 0;
+
         for (int x = 1; x <= size; x++) {
             for (int y = x; y <= size; y++) {
-                String maxRange = "M" + x + y;
-                System.out.println(maxRange);
-                int maxSum = 0;
+                String currentRange = x + "-" + y;
+                // System.out.println(currentRange);
+                int currentSum = 0;
 
                 for (int z = x; z <= y; z++) {
-                    maxSum = maxSum + numbers[z-1];
+                    currentSum = currentSum + numbers[z-1];
                 }
-                System.out.println(maxSum);
+                // System.out.println(currentSum);
+                if (currentSum > maxSum) {
+                    maxSum = currentSum;
+                    maxRange = currentRange;
+                }
             }
         }
 
-
-        System.out.println("array:");
-        for (int i = 0; i < size; i++) {
-            System.out.println(numbers[i]);
-        }
+        System.out.println();
+        System.out.println("Maximum sum: " + maxSum);
+        System.out.println("Integers: " + maxRange);
 
 
     }
