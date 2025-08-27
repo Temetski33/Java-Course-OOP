@@ -1,6 +1,7 @@
 public class Television {
 
     int currentChannel = 0;
+    boolean power = false;
 
     void setChannel(int channel) {
         currentChannel = channel;
@@ -14,11 +15,10 @@ public class Television {
     }
 
     void pressOnOff() {
-
+        power = !power;
     }
 
     boolean isOn() {
-
-        return false;
+        return power;
     }
 }
