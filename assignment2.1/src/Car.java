@@ -8,6 +8,7 @@ public class Car {
      */
     private double speed;
     private double gasolineLevel;
+    private double tankCapacity;
     private String typeName;
 
     /* This is the method (constructor) called when a new instance of Car is created (with new).
@@ -18,6 +19,11 @@ public class Car {
         this.typeName = typeName;   // this refers to the object itself.
         // The reference is useful if you want to use parameter names that are
         // identical to instance variable names (and for more, later on)
+    }
+
+    public Car(int speed, int tankCapacity) {
+        this.speed = speed;
+        this.tankCapacity = tankCapacity;
     }
 
     /* Implementations of some methods.
