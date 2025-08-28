@@ -1,7 +1,7 @@
 public class Television {
 
-    int currentChannel = 0;
-    boolean power = false;
+    private int currentChannel = 0;
+    private boolean power = false;
 
     void setChannel(int channel) {
         currentChannel = channel;
