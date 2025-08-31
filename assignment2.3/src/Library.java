@@ -29,4 +29,22 @@ public class Library {
         }
         System.out.println();
     }
+
+    void borrowBook(String title) {
+        this.books.removeIf(book -> title.equals(book.getTitle()));
+    }
+
+    void returnBook(Book book) {
+        addBook(book);
+    }
+
+    boolean isBookAvailable(String title) {
+        for (Book book: this.books) {
+            if (title.equals(book.getTitle())) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
