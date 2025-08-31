@@ -12,7 +12,7 @@ public class Library {
         int counter = 1;
         System.out.println("Library catalog:");
         for (Book book: this.books) {
-            System.out.println(counter + ". Title: \"" + book.getTitle() + "\", Author: \"" + book.getAuthor() + "\" Year: " + book.getYear());
+            System.out.println(counter + ". Title: \"" + book.getTitle() + "\", Author: \"" + book.getAuthor() + "\", Year: " + book.getYear());
             counter++;
         }
         System.out.println();
@@ -22,7 +22,8 @@ public class Library {
         System.out.println("Books by author \"" + author + "\":");
         for (Book book: this.books) {
             if (author.equals(book.getAuthor())) {
-                System.out.println("Title: \"" + book.getTitle() + "\", Author: \"" + book.getAuthor() + "\" Year: " + book.getYear());
+                System.out.println("Title: \"" + book.getTitle() +"\", Year: " + book.getYear());
+
 
             }
         }
