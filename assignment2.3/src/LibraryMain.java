@@ -13,5 +13,21 @@ public class LibraryMain {
         library.displayBooks();
 
         library.findBooksByAuthor("Frank Herbert");
+
+        library.borrowBook("Dune");
+        if (library.isBookAvailable("Dune")) {
+            System.out.println("yes");
+        }
+        else {
+            System.out.println("no");
+        }
+
+        library.returnBook(dune);
+        if (library.isBookAvailable("Dune")) {
+            System.out.println("yes");
+        }
+        else {
+            System.out.println("no");
+        }
     }
 }
