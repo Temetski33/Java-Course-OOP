@@ -12,6 +12,6 @@ public class LibraryMain {
 
         library.displayBooks();
 
-        library.findBooksByAuthor("Brandon Sanderson");
+        library.findBooksByAuthor("Frank Herbert");
     }
 }

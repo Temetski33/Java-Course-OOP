@@ -10,10 +10,12 @@ public class Library {
 
     void displayBooks() {
         int counter = 1;
+        System.out.println("Library catalog:");
         for (Book book: this.books) {
-            System.out.println(counter + "Title: \"" + book.getTitle() + "\", Author: \"" + book.getAuthor() + "\" Year: " + book.getYear());
+            System.out.println(counter + ". Title: \"" + book.getTitle() + "\", Author: \"" + book.getAuthor() + "\" Year: " + book.getYear());
             counter++;
         }
+        System.out.println();
     }
 
     void findBooksByAuthor(String author) {
@@ -24,5 +26,6 @@ public class Library {
 
             }
         }
+        System.out.println();
     }
 }
