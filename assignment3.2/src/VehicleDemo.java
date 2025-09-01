@@ -1,6 +1,6 @@
 public class VehicleDemo {
     public static void main(String[] args) {
-        Vehicle car = new Car();
+        Vehicle car = new Car("Red");
         Vehicle motorcycle = new Motorcycle();
         Vehicle bus = new Bus();
 
@@ -11,6 +11,7 @@ public class VehicleDemo {
         car.stop();
         System.out.println(car.getInfo());
 
+        /*
         motorcycle.start();
         motorcycle.stop();
         System.out.println(motorcycle.getInfo());
@@ -19,5 +20,6 @@ public class VehicleDemo {
         bus.stop();
         System.out.println(bus.getInfo());
 
+         */
     }
 }

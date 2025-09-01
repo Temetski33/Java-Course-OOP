@@ -1,12 +1,15 @@
 interface Vehicle {
+    String getType();
+    String getColor();
+
     default void start() {
-        System.out.println("is starting...");
+        System.out.println(getType() + " is starting...");
     }
     default void stop() {
-        System.out.println("is stopping...");
+        System.out.println(getType() + " is stopping...");
     }
     default String getInfo() {
-        return "data about vehicle";
+        return "type" + getType() + " color" + getColor();
     }
 }
 
