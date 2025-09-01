@@ -23,18 +23,28 @@ public class Library {
         for (Book book: this.books) {
             if (author.equals(book.getAuthor())) {
                 System.out.println("Title: \"" + book.getTitle() +"\", Year: " + book.getYear());
-
-
             }
         }
         System.out.println();
     }
 
     void borrowBook(String title) {
-        this.books.removeIf(book -> title.equals(book.getTitle()));
+        boolean exists = false;
+        for (Book book: this.books) {
+            if (title.equals(book.getTitle())) {
+                exists = true;
+                System.out.println("Borrowed book \"" + book.getTitle() + "\".");
+                books.remove(book);
+                break;
+            }
+        }
+        if (!exists) {
+            System.out.println("The book you are trying to borrow does not exist.");
+        }
     }
 
     void returnBook(Book book) {
+        System.out.println("Returned book \"" + book.getTitle() + "\".");
         addBook(book);
     }
 
