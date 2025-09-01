@@ -1,11 +1,11 @@
 public class Bus implements Vehicle {
     private String type = "Bus";
     private String fuel;
-    private String color;
+    private int capacity;
 
-    public Bus(String fuel, String color) {
+    public Bus(String fuel, int capacity) {
         this.fuel = fuel;
-        this.color = color;
+        this.capacity = capacity;
     }
 
     @Override
@@ -20,6 +20,11 @@ public class Bus implements Vehicle {
 
     @Override
     public String getColor() {
-        return color;
+        return "";
+    }
+
+    @Override
+    public String getInfo() {
+        return getType() + " Information: \n" + "Type: " + getType() + "\nFuel: "+ getFuel() + "\nCapacity: " + capacity + " passengers\n";
     }
 }
