@@ -35,4 +35,8 @@ public class User {
     public void removeBorrowedBook(String book) {
         borrowedBooks.remove(book);
     }
+
+    public List<String> getBorrowedBooks() {
+        return borrowedBooks;
+    }
 }
