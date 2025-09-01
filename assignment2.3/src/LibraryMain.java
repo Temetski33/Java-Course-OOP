@@ -16,5 +16,7 @@ public class LibraryMain {
 
         library.borrowBook("Dune");
         library.returnBook(dune);
+
+        System.out.println("Rating average of the books is " + library.getAverageBookRating() + ".");
     }
 }
