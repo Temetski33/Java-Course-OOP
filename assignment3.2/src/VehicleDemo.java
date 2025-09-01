@@ -1,6 +1,6 @@
 public class VehicleDemo {
     public static void main(String[] args) {
-        Vehicle car = new Car("Red");
+        Vehicle car = new Car("Petrol", "Red");
         Vehicle motorcycle = new Motorcycle();
         Vehicle bus = new Bus();
 

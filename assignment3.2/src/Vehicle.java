@@ -1,5 +1,6 @@
 interface Vehicle {
     String getType();
+    String getFuel();
     String getColor();
 
     default void start() {
@@ -9,7 +10,7 @@ interface Vehicle {
         System.out.println(getType() + " is stopping...");
     }
     default String getInfo() {
-        return getType() + "Information: \n" + "Type: " + getType() + "\nColor: " + getColor() + "\n";
+        return getType() + " Information: \n" + "Type: " + getType() + "\nFuel: "+ getFuel() + "\nColor: " + getColor() + "\n";
     }
 }
 
