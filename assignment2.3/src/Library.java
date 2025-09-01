@@ -85,4 +85,8 @@ public class Library {
 
         return mostReviewed;
     }
+
+    void trackUser(User user) {
+        System.out.println("User \"" + user.getName() + "\" has borrowed the books" + user.getBorrowedBooks() + ".");
+    }
 }
