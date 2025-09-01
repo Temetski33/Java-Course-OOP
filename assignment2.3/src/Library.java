@@ -34,17 +34,20 @@ public class Library {
             if (title.equals(book.getTitle())) {
                 exists = true;
                 System.out.println("Borrowed book \"" + book.getTitle() + "\".");
+                System.out.println();
                 books.remove(book);
                 break;
             }
         }
         if (!exists) {
             System.out.println("The book you are trying to borrow does not exist.");
+            System.out.println();
         }
     }
 
     void returnBook(Book book) {
         System.out.println("Returned book \"" + book.getTitle() + "\".");
+        System.out.println();
         addBook(book);
     }
 
