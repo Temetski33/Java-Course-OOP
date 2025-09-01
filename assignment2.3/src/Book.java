@@ -32,6 +32,10 @@ public class Book {
         return rating;
     }
 
+    public List<String> getReviews() {
+        return reviews;
+    }
+
     public void setRating(double rating) {
         this.rating = rating;
     }

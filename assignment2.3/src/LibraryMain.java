@@ -14,9 +14,24 @@ public class LibraryMain {
 
         library.findBooksByAuthor("Frank Herbert");
 
+
+        if (library.isBookAvailable("Dune")) {
+            System.out.println("This book is available.");
+        }
+
         library.borrowBook("Dune");
         library.returnBook(dune);
 
-        System.out.println("Rating average of the books is " + library.getAverageBookRating() + ".");
+        dune.setRating(10);
+        duneMessiah.setRating(8);
+
+        System.out.println("Average rating of all books is " + library.getAverageBookRating() + ".");
+
+        dune.addReview("Good");
+        duneMessiah.addReview("I loved this booked all the way through.");
+        duneMessiah.addReview("I have no idea what's going on!");
+        wayOfKings.addReview("My favorite book of all time.");
+
+        System.out.println("The most reviewed book is " + library.getMostReviewedBook() + ".");
     }
 }

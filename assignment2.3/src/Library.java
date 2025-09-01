@@ -57,7 +57,6 @@ public class Library {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -71,5 +70,19 @@ public class Library {
         ratingAvg = ratingSum / this.books.size();
 
         return ratingAvg;
+    }
+
+    String getMostReviewedBook() {
+        String mostReviewed = "";
+        int reviewCount = 0;
+
+        for (Book book: this.books) {
+            if (book.getReviews().size() > reviewCount) {
+                mostReviewed = book.getTitle();
+                reviewCount = book.getReviews().size();
+            }
+        }
+
+        return mostReviewed;
     }
 }
