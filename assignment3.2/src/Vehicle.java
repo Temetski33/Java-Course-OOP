@@ -9,7 +9,7 @@ interface Vehicle {
         System.out.println(getType() + " is stopping...");
     }
     default String getInfo() {
-        return "type" + getType() + " color" + getColor();
+        return getType() + "Information: \n" + "Type: " + getType() + "\nColor: " + getColor() + "\n";
     }
 }
 
