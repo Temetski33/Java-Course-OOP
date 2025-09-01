@@ -1,8 +1,8 @@
 public class VehicleDemo {
     public static void main(String[] args) {
         Vehicle car = new Car("Petrol", "Red");
-        Vehicle motorcycle = new Motorcycle();
-        Vehicle bus = new Bus();
+        Vehicle motorcycle = new Motorcycle("Gasoline", "Black");
+        Vehicle bus = new Bus("Diesel", "Yellow");
 
         System.out.println("Vehicle demonstration");
         System.out.println();
@@ -11,7 +11,6 @@ public class VehicleDemo {
         car.stop();
         System.out.println(car.getInfo());
 
-        /*
         motorcycle.start();
         motorcycle.stop();
         System.out.println(motorcycle.getInfo());
@@ -20,6 +19,6 @@ public class VehicleDemo {
         bus.stop();
         System.out.println(bus.getInfo());
 
-         */
+
     }
 }

@@ -8,7 +8,6 @@ public class Car implements Vehicle {
         this.color = color;
     }
 
-
     @Override
     public String getType() {
         return type;
