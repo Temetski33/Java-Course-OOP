@@ -1,2 +1,2 @@
-public class Motorcycle {
+public class Motorcycle implements Vehicle {
 }

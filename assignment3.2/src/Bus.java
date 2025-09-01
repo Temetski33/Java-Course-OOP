@@ -1,2 +1,2 @@
-public class Bus {
+public class Bus implements Vehicle {
 }
