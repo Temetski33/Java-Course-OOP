@@ -39,14 +39,30 @@ public class Main {
         myCoolLibrary.borrowBook(larry, theWayOfKings);
         myCoolLibrary.borrowBook(larry, dune);
 
-        larry.getBorrowedBooks();
+        myCoolLibrary.displayBorrowedBooks(larry);
 
         myCoolLibrary.returnBook(larry, theWayOfKings);
         myCoolLibrary.returnBook(larry, dune);
 
-        larry.getBorrowedBooks();
-
         myCoolLibrary.borrowBook(jurgen, dune);
+
+
+        myCoolLibrary.reserveBook(esmeralda, theWayOfKings);
+        myCoolLibrary.reserveBook(esmeralda, book5);
+        myCoolLibrary.reserveBook(larry, theWayOfKings);
+        myCoolLibrary.reserveBook(jurgen, piano);
+
+        myCoolLibrary.cancelReservation(esmeralda, theWayOfKings);
+        myCoolLibrary.cancelReservation(jurgen, piano);
+        myCoolLibrary.reserveBook(jurgen, dune);
+        myCoolLibrary.reserveBook(jurgen, forever);
+        myCoolLibrary.displayReservedBooks(jurgen);
+
+        System.out.println();
+        myCoolLibrary.displayReservedBooks(esmeralda);
+        myCoolLibrary.cancelReservation(esmeralda, book5);
+        myCoolLibrary.displayReservedBooks(esmeralda);
+
 
 
     }
