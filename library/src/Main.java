@@ -15,6 +15,9 @@ public class Main {
 
         Book dune = new Book("Dune", "Frank Herbert", "DFN231");
         Book theWayOfKings = new Book("The Way of Kings", "Brandon Sanderson", "TBS786");
+        Book piano = new Book("Beginner Piano", "Piano Man", "BPM180");
+        Book forever = new Book("Foreverance", "Eternity Ever", "FEE303");
+        Book book5 = new Book("Book5", "Mr Five", "BMF555");
 
         LibraryMember larry = new LibraryMember("Larry Lee", 22336);
         LibraryMember esmeralda = new LibraryMember("Esmerald Earthe", 48684);
