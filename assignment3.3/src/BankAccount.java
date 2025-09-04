@@ -23,7 +23,7 @@ public class BankAccount {
     }
 
     public void deposit(int depositAmount) {
-        balance =  balance - depositAmount;
+        balance =  balance + depositAmount;
     }
 
     public void withdraw(int withdrawAmount) {
