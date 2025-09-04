@@ -13,9 +13,9 @@ public class Main {
         Book dune = new Book("Dune", "Frank Herbert", "DFN231");
         Book theWayOfKings = new Book("The Way of Kings", "Brandon Sanderson", "TBS786");
 
-        LibraryMember larry = new LibraryMember("Larry Lee", 223);
-        LibraryMember esmeralda = new LibraryMember("Esmerald Earthe", 486);
-        LibraryMember jurgen = new LibraryMember("Jurgen Klum", 666);
+        LibraryMember larry = new LibraryMember("Larry Lee", 22336);
+        LibraryMember esmeralda = new LibraryMember("Esmerald Earthe", 48684);
+        LibraryMember jurgen = new LibraryMember("Jurgen Klum", 66666);
 
         myCoolLibrary.addBook(dune);
         myCoolLibrary.addBook(theWayOfKings);
@@ -25,6 +25,7 @@ public class Main {
         myCoolLibrary.addMember(jurgen);
 
         myCoolLibrary.borrowBook(larry, theWayOfKings);
+        myCoolLibrary.returnBook(larry, theWayOfKings);
 
 
     }
