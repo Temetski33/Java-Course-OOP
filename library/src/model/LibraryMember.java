@@ -40,12 +40,8 @@ public class LibraryMember {
         borrowedBooks.remove(book);
     }
 
-    public void getBorrowedBooks() {
-        System.out.println(name + " has borrowed: ");
-        for (Book book : borrowedBooks) {
-            System.out.println(" " + book.getTitle());
-        }
-        System.out.println();
+    public LinkedList<Book> getBorrowedBooks() {
+        return borrowedBooks;
     }
 
     public void addReservedBook(Book book) {
