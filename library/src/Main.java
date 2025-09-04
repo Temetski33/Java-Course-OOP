@@ -24,6 +24,8 @@ public class Main {
         myCoolLibrary.addMember(esmeralda);
         myCoolLibrary.addMember(jurgen);
 
+        myCoolLibrary.borrowBook(larry, theWayOfKings);
+
 
     }
 }
