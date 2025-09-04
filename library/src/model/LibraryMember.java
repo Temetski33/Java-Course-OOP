@@ -30,4 +30,12 @@ public class LibraryMember {
     public void setMemberId(int memberId) {
         this.memberId = memberId;
     }
+
+    public void borrowBook(Book book) {
+        borrowedBooks.add(book);
+    }
+
+    public void returnBook(Book book) {
+        borrowedBooks.remove(book);
+    }
 }
