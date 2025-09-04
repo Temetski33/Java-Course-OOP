@@ -40,8 +40,10 @@ public class LibraryMember {
     }
 
     public void getBorrowedBooks() {
+        System.out.println(name + " has borrowed: ");
         for (Book book : borrowedBooks) {
             System.out.println(book.getTitle());
         }
+        System.out.println();
     }
 }
