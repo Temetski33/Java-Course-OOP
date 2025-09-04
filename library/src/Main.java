@@ -25,11 +25,15 @@ public class Main {
 
         myCoolLibrary.addBook(dune);
         myCoolLibrary.addBook(theWayOfKings);
+        myCoolLibrary.addBook(piano);
+        myCoolLibrary.addBook(forever);
+        myCoolLibrary.addBook(book5);
+        System.out.println();
+
 
         myCoolLibrary.addMember(larry);
         myCoolLibrary.addMember(esmeralda);
         myCoolLibrary.addMember(jurgen);
-
         System.out.println();
 
         myCoolLibrary.borrowBook(larry, theWayOfKings);
