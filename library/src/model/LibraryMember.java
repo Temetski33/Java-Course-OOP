@@ -5,7 +5,8 @@ import java.util.LinkedList;
 public class LibraryMember {
     private String name;
     private int memberId;
-    LinkedList<Book> borrowedBooks;
+    private LinkedList<Book> borrowedBooks;
+    private LinkedList<Book> reservedBooks = new LinkedList<>();
 
     // Constructor, getters, setters
 
@@ -45,5 +46,21 @@ public class LibraryMember {
             System.out.println(" " + book.getTitle());
         }
         System.out.println();
+    }
+
+    public void addReservedBook(Book book) {
+        reservedBooks.add(book);
+    }
+
+    public void removeReservedBook(Book book) {
+        reservedBooks.remove(book);
+    }
+
+    public boolean hasReservedBook(Book book) {
+        return reservedBooks.contains(book);
+    }
+
+    public LinkedList<Book> getReservedBooks() {
+        return reservedBooks;
     }
 }
