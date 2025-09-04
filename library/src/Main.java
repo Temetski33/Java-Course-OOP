@@ -8,7 +8,7 @@ public class Main {
         // Add books and members to the library
         // Perform borrowing and returning operations
 
-        Library library = new Library();
+        Library myCoolLibrary = new Library();
 
         Book dune = new Book("Dune", "Frank Herbert", "DFN231");
         Book theWayOfKings = new Book("The Way of Kings", "Brandon Sanderson", "TBS786");
