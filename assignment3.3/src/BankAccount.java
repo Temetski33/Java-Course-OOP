@@ -1,6 +1,34 @@
 public class BankAccount {
     // Your variable declarations and code here
-    private static int totalAccounts;
+    private static int totalAccounts = 0;
+    private int balance;
+    private int accountNumber;
+
+    public BankAccount(int balance) {
+        totalAccounts++;
+        this.balance = balance;
+        this.accountNumber = totalAccounts;
+    }
+
+    public static int getTotalAccounts() {
+        return totalAccounts;
+    }
+
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public void deposit(int depositAmount) {
+        balance =  balance - depositAmount;
+    }
+
+    public void withdraw(int withdrawAmount) {
+        balance = balance - withdrawAmount;
+    }
 
     public static void main(String[] args) {
         BankAccount account1 = new BankAccount(1000);
