@@ -10,6 +10,9 @@ public class Main {
 
         Library myCoolLibrary = new Library();
 
+        System.out.println("Welcome to my cool library!");
+        System.out.println();
+
         Book dune = new Book("Dune", "Frank Herbert", "DFN231");
         Book theWayOfKings = new Book("The Way of Kings", "Brandon Sanderson", "TBS786");
 
@@ -25,7 +28,14 @@ public class Main {
         myCoolLibrary.addMember(jurgen);
 
         myCoolLibrary.borrowBook(larry, theWayOfKings);
+        myCoolLibrary.borrowBook(larry, dune);
+
+        larry.getBorrowedBooks();
+
         myCoolLibrary.returnBook(larry, theWayOfKings);
+        myCoolLibrary.returnBook(larry, dune);
+
+        larry.getBorrowedBooks();
 
 
     }
