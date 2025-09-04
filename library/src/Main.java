@@ -11,6 +11,11 @@ public class Main {
         Library library = new Library();
 
         Book dune = new Book("Dune", "Frank Herbert", "DFN231");
+        Book theWayOfKings = new Book("The Way of Kings", "Brandon Sanderson", "TBS786");
+
+        LibraryMember larry = new LibraryMember("Larry Lee", 223);
+        LibraryMember esmerala = new LibraryMember("Esmerald Earthe", 486);
+        LibraryMember jurgen = new LibraryMember("Jurgen Klum", 666);
 
 
     }
