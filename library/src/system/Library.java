@@ -26,7 +26,6 @@ public class Library {
         books.remove(book);
         member.borrowBook(book);
         System.out.println("User \"" + member.getName() + "\" borrowed " + book.getTitle() + " by " + book.getAuthor() + ".");
-        System.out.println();
     }
 
     public void returnBook(LibraryMember member, Book book) {
@@ -34,7 +33,6 @@ public class Library {
         member.returnBook(book);
         books.add(book);
         System.out.println(member.getName() + " returned " + book.getTitle() + ".");
-        System.out.println();
     }
 
     public void displayBorrowedBooks(LibraryMember member) {
