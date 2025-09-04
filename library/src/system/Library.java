@@ -37,6 +37,13 @@ public class Library {
         System.out.println();
     }
 
+    public void displayBorrowedBooks(LibraryMember member) {
+        System.out.println("Borrowed books for " + member.getName() + ":");
+        for (Book book : member.getBorrowedBooks()) {
+            System.out.println(book.getTitle());
+        }
+    }
+
     public void reserveBook(LibraryMember member, Book book) {
         if (!book.isReserved()) {
             book.setReserved(true);
