@@ -21,11 +21,13 @@ public class Library {
 
     public void borrowBook(LibraryMember member, Book book) {
         // Borrow book from the library
-
-
+        books.remove(book);
+        member.borrowBook(book);
     }
 
     public void returnBook(LibraryMember member, Book book) {
         // Return book to the library
+        member.returnBook(book);
+        books.add(book);
     }
 }
