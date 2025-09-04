@@ -5,13 +5,14 @@ import java.util.LinkedList;
 public class LibraryMember {
     private String name;
     private int memberId;
-    LinkedList<Book> borrowedBooks = new LinkedList<>();
+    LinkedList<Book> borrowedBooks;
 
     // Constructor, getters, setters
 
     public LibraryMember(String name, int memberId) {
         this.name = name;
         this.memberId = memberId;
+        this.borrowedBooks = new LinkedList<>();
     }
 
     public String getName() {
