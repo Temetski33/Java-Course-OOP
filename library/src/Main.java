@@ -14,8 +14,15 @@ public class Main {
         Book theWayOfKings = new Book("The Way of Kings", "Brandon Sanderson", "TBS786");
 
         LibraryMember larry = new LibraryMember("Larry Lee", 223);
-        LibraryMember esmerala = new LibraryMember("Esmerald Earthe", 486);
+        LibraryMember esmeralda = new LibraryMember("Esmerald Earthe", 486);
         LibraryMember jurgen = new LibraryMember("Jurgen Klum", 666);
+
+        myCoolLibrary.addBook(dune);
+        myCoolLibrary.addBook(theWayOfKings);
+
+        myCoolLibrary.addMember(larry);
+        myCoolLibrary.addMember(esmeralda);
+        myCoolLibrary.addMember(jurgen);
 
 
     }
