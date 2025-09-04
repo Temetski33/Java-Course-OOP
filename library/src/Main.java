@@ -27,6 +27,8 @@ public class Main {
         myCoolLibrary.addMember(esmeralda);
         myCoolLibrary.addMember(jurgen);
 
+        System.out.println();
+
         myCoolLibrary.borrowBook(larry, theWayOfKings);
         myCoolLibrary.borrowBook(larry, dune);
 
@@ -36,6 +38,8 @@ public class Main {
         myCoolLibrary.returnBook(larry, dune);
 
         larry.getBorrowedBooks();
+
+        myCoolLibrary.borrowBook(jurgen, dune);
 
 
     }
