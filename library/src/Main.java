@@ -39,18 +39,21 @@ public class Main {
         myCoolLibrary.borrowBook(larry, theWayOfKings);
         myCoolLibrary.borrowBook(larry, dune);
 
+        System.out.println();
         myCoolLibrary.displayBorrowedBooks(larry);
+        System.out.println();
 
         myCoolLibrary.returnBook(larry, theWayOfKings);
         myCoolLibrary.returnBook(larry, dune);
 
         myCoolLibrary.borrowBook(jurgen, dune);
-
+        System.out.println();
 
         myCoolLibrary.reserveBook(esmeralda, theWayOfKings);
         myCoolLibrary.reserveBook(esmeralda, book5);
         myCoolLibrary.reserveBook(larry, theWayOfKings);
         myCoolLibrary.reserveBook(jurgen, piano);
+        System.out.println();
 
         myCoolLibrary.cancelReservation(esmeralda, theWayOfKings);
         myCoolLibrary.cancelReservation(jurgen, piano);
@@ -60,6 +63,7 @@ public class Main {
 
         System.out.println();
         myCoolLibrary.displayReservedBooks(esmeralda);
+        System.out.println();
         myCoolLibrary.cancelReservation(esmeralda, book5);
         myCoolLibrary.displayReservedBooks(esmeralda);
 
