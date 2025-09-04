@@ -38,4 +38,10 @@ public class LibraryMember {
     public void returnBook(Book book) {
         borrowedBooks.remove(book);
     }
+
+    public void getBorrowedBooks() {
+        for (Book book : borrowedBooks) {
+            System.out.println(book.getTitle());
+        }
+    }
 }
