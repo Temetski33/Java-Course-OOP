@@ -22,6 +22,7 @@ public class GroceryListManager {
     }
 
     public boolean checkItem(String item){
+        System.out.print("Is \"" + item + "\" in the grocery list? ");
         return groceryList.contains(item);
     }
 
@@ -33,6 +34,8 @@ public class GroceryListManager {
         manager.addItem("Bread");
 
         manager.displayList();
+        System.out.println();
+        System.out.print(manager.checkItem("Milk"));
     }
 
 
