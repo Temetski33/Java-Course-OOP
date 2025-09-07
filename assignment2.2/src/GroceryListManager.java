@@ -9,6 +9,7 @@ public class GroceryListManager {
     }
 
     void removeItem(String item) {
+        System.out.println("Removing \"" + item + "\" from the list...");
         groceryList.remove(item);
     }
 
@@ -35,7 +36,13 @@ public class GroceryListManager {
 
         manager.displayList();
         System.out.println();
-        System.out.print(manager.checkItem("Milk"));
+        System.out.println(manager.checkItem("Milk"));
+
+        System.out.println();
+
+        manager.removeItem("Milk");
+        System.out.println();
+        manager.displayList();
     }
 
 
