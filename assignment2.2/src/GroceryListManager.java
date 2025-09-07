@@ -55,7 +55,7 @@ public class GroceryListManager {
         manager.displayList();
 
         System.out.println();
-        System.out.println(manager.calculateTotalCost());
+        System.out.println("Total cost: " + manager.calculateTotalCost() + "€");
     }
 
 
