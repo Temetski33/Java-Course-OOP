@@ -6,7 +6,7 @@ public class GroceryListManager {
     private HashMap<String, Double> groceryList = new HashMap<>();
 
     // Add methods here
-    void addItem(String item, double cost) {
+    void addItem(String item, double cost, String category, int quantity) {
         groceryList.put(item, cost);
     }
 
@@ -40,9 +40,9 @@ public class GroceryListManager {
     public static void main(String[] args) {
         GroceryListManager manager = new GroceryListManager();
 
-        manager.addItem("Apples", 0.5);
-        manager.addItem("Milk", 2);
-        manager.addItem("Bread", 3);
+        manager.addItem("Apples", 0.2, "Fruit", 7);
+        manager.addItem("Milk", 2, "Dairy", 1);
+        manager.addItem("Bread", 3, "Bakery", 1);
 
         manager.displayList();
         System.out.println();
