@@ -4,11 +4,11 @@ public class GroceryListManager {
     private ArrayList<String> groceryList = new ArrayList<>();
 
     // Add methods here
-    public void addItem(String item) {
+    void addItem(String item) {
         groceryList.add(item);
     }
 
-    public void removeItem(String item) {
+    void removeItem(String item) {
         groceryList.remove(item);
     }
 
@@ -19,4 +19,17 @@ public class GroceryListManager {
     public boolean checkItem(String item){
         return groceryList.contains(item);
     }
+
+    public static void main(String[] args) {
+        GroceryListManager manager = new GroceryListManager();
+
+        manager.addItem("Apples");
+        manager.addItem("Milk");
+        manager.addItem("Bread");
+
+        manager.displayList();
+    }
+
+
 }
+
