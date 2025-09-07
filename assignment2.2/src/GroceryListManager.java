@@ -1,12 +1,11 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 public class GroceryListManager {
     private HashMap<String, Double> groceryList = new HashMap<>();
 
     // Add methods here
-    void addItem(String item, double cost, String category, int quantity) {
+    void addItem(String item, double cost) {
         groceryList.put(item, cost);
     }
 
@@ -37,12 +36,13 @@ public class GroceryListManager {
         return totalCost;
     }
 
+
     public static void main(String[] args) {
         GroceryListManager manager = new GroceryListManager();
 
-        manager.addItem("Apples", 0.2, "Fruit", 7);
-        manager.addItem("Milk", 2, "Dairy", 1);
-        manager.addItem("Bread", 3, "Bakery", 1);
+        manager.addItem("Apples", 0.2);
+        manager.addItem("Milk", 2);
+        manager.addItem("Bread", 3);
 
         manager.displayList();
         System.out.println();
@@ -56,8 +56,12 @@ public class GroceryListManager {
 
         System.out.println();
         System.out.println("Total cost: " + manager.calculateTotalCost() + "€");
+
+        System.out.println();
+        manager.addItem("Watermelon", 5);
+        manager.displayList();
+        System.out.println();
+        System.out.println("Total cost: " + manager.calculateTotalCost() + "€");
     }
-
-
 }
 
