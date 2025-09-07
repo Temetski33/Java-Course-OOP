@@ -18,8 +18,9 @@ public class GroceryListManager {
     public void displayList() {
         System.out.println("Grocery list:");
         int counter = 1;
-        for (Map.Entry<String, Double> entry : groceryList.entrySet()) {
-            System.out.println(counter + ". " + entry);
+
+        for (String key : groceryList.keySet()) {
+            System.out.println(counter + ". " + key);
             counter++;
         }
     }
