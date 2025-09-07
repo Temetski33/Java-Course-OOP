@@ -13,11 +13,11 @@ public class GroceryListManager {
     }
 
     public void displayList() {
-        System.out.println(groceryList);
         System.out.println("Grocery list:");
-        int counter = 0;
+        int counter = 1;
         for (String item : groceryList) {
             System.out.println(counter + ". " + item);
+            counter++;
         }
     }
 
