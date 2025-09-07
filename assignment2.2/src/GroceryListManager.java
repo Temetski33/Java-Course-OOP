@@ -30,6 +30,13 @@ public class GroceryListManager {
         return groceryList.containsKey(item);
     }
 
+    public double calculateTotalCost() {
+        double totalCost = 0;
+        for (Double cost : groceryList.values())
+            totalCost = totalCost + cost;
+        return totalCost;
+    }
+
     public static void main(String[] args) {
         GroceryListManager manager = new GroceryListManager();
 
@@ -46,6 +53,9 @@ public class GroceryListManager {
         manager.removeItem("Milk");
         System.out.println();
         manager.displayList();
+
+        System.out.println();
+        System.out.println(manager.calculateTotalCost());
     }
 
 
